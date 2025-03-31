@@ -2,10 +2,22 @@
 
 import type React from "react"
 
-import { Search } from "lucide-react"
+import { ChevronDown, Search } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+
+import { productCategories as productData } from "@/lib/products"
+
 
 export default function Navbar() {
   const [searchQuery, setSearchQuery] = useState("")
@@ -21,12 +33,12 @@ export default function Navbar() {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-8">
           <Link href="/" className="flex items-center">
-            <div className="relative h-12 w-12 overflow-hidden rounded-md">
+            <div className="relative h-12 overflow-hidden rounded-md">
               <Image
                 src="/logo.png"
                 alt="Eshani Logo"
-                width={48}
-                height={48}
+                width={150}
+                height={150}
               />
             </div>
           </Link>
@@ -47,12 +59,58 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/products"
-                  className="text-[#252525] font-bold text-base uppercase hover:border-b-2 hover:border-[#252525] transition-all"
-                >
-                  Products
-                </Link>
+              <DropdownMenu>
+                  <DropdownMenuTrigger className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-bold focus:outline-none">
+                    Products{" "}
+                    <ChevronDown className="inline-block ml-1 h-4 w-4" />
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent className="w-56">
+                    {productData.map((company) =>
+                      company.categories && company.categories.length > 0 ? (
+                        <DropdownMenuSub key={company.name}>
+                          <DropdownMenuSubTrigger className="w-full">
+                            {company.name}
+                          </DropdownMenuSubTrigger>
+                          <DropdownMenuSubContent className="w-56">
+                            {company.categories.map((category) =>
+                              category.items &&
+                              category.items.length > 0 ? (
+                                <DropdownMenuSub key={category.name}>
+                                  <DropdownMenuSubTrigger className="w-full">
+                                    {category.name}
+                                  </DropdownMenuSubTrigger>
+                                  <DropdownMenuSubContent className="w-56">
+                                    {category.items.map((item) => (
+                                     <DropdownMenuItem key={item.name}>
+                                     <Link href={item.href} className="w-full">
+                                       {item.name}
+                                     </Link>
+                                   </DropdownMenuItem>
+                                    ))}
+                                  </DropdownMenuSubContent>
+                                </DropdownMenuSub>
+                              ) : (
+                                <DropdownMenuItem key={category.name}>
+                                  <Link href={category.href} className="w-full">
+                                    {category.name}
+                                  </Link>
+                                </DropdownMenuItem>
+                              )
+                            )}
+                          </DropdownMenuSubContent>
+                        </DropdownMenuSub>
+                      ) : (
+                        <DropdownMenuItem key={company.name}>
+                          <Link href={company.href} className="w-full">
+                            {company.name}
+                          </Link>
+                        </DropdownMenuItem>
+                      )
+                    )}
+                  </DropdownMenuContent>
+                </DropdownMenu>
+
+                
               </li>
               <li>
                 <Link
@@ -72,7 +130,7 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href="/ContactUs"
                   className="text-[#252525] font-bold text-base uppercase hover:border-b-2 hover:border-[#252525] transition-all"
                 >
                   CONTACT US

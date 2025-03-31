@@ -38,7 +38,7 @@ export default function GalleryPage() {
             </button>
           </div>
         </div>
-      </div>
+      </div>                                              
 
       {/* Gallery Grid */}
       <main className="container mx-auto px-4 flex-grow mb-12">
