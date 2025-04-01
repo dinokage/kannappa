@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/ui/navbar";
+import Footer from "@/components/ui/Footer";
 
 const geistSans = Inter({
   variable: "--font-inter",
@@ -30,7 +31,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
-      
+      <Footer/>
       </body>
     </html>
   );

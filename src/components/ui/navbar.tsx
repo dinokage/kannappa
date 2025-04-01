@@ -60,8 +60,8 @@ export default function Navbar() {
               </li>
               <li>
               <DropdownMenu>
-                  <DropdownMenuTrigger className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-bold focus:outline-none">
-                    Products{" "}
+                  <DropdownMenuTrigger className="text-black hover:text-gray-900 px-3 py-2 rounded-md text-sm font-bold focus:outline-none">
+                    PRODUCTS{" "}
                     <ChevronDown className="inline-block ml-1 h-4 w-4" />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent className="w-56">
@@ -109,16 +109,7 @@ export default function Navbar() {
                     )}
                   </DropdownMenuContent>
                 </DropdownMenu>
-
-                
-              </li>
-              <li>
-                <Link
-                  href="/services"
-                  className="text-[#252525] font-bold text-base uppercase hover:border-b-2 hover:border-[#252525] transition-all"
-                >
-                  Services
-                </Link>
+              
               </li>
               <li>
                 <Link

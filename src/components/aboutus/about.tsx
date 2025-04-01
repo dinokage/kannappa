@@ -84,99 +84,11 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section className="bg-gradient-to-r from-[#ecdfcf] to-[#fff9e3] py-12">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div>
-                <h3 className="text-[#29567a] text-xl font-bold mb-4">Let's Connect</h3>
-                <p className="text-sm text-[#606060] mb-4">
-                  An exclusive One-Stop Facility for guaranteed energy efficient solutions related to Air Compressors,
-                  Pumps, Valves,Drive Engineering & Material handling.
-                </p>
-                <div className="mt-6">
-                  <h4 className="font-bold mb-2">FOLLOW US</h4>
-                  <div className="flex space-x-2">
-                    <a href="#" className="bg-white p-2 rounded-md">
-                      <Twitter className="h-5 w-5 text-[#1d9bf0]" />
-                    </a>
-                    <a href="#" className="bg-white p-2 rounded-md">
-                      <Facebook className="h-5 w-5 text-[#1877f2]" />
-                    </a>
-                    <a href="#" className="bg-white p-2 rounded-md">
-                      <Linkedin className="h-5 w-5 text-[#0076b2]" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-[#29567a] text-xl font-bold mb-4">Get the Latest Information</h3>
-                <div className="flex">
-                  <Input type="email" placeholder="Email Address" className="rounded-l-md rounded-r-none border-r-0" />
-                  <Button className="bg-[#0076b2] hover:bg-[#29567a] rounded-l-none">
-                    <ArrowRight className="h-5 w-5" />
-                  </Button>
-                </div>
-
-                <div className="mt-8">
-                  <h3 className="text-[#29567a] text-xl font-bold mb-4">Quick Links</h3>
-                  <ul className="space-y-2 text-[#606060]">
-                    <li>
-                      <a href="#" className="hover:text-[#0076b2]">
-                        Products
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="hover:text-[#0076b2]">
-                        Company
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="hover:text-[#0076b2]">
-                        Gallery
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="hover:text-[#0076b2]">
-                        Contact Us
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div>
-                <div className="bg-white p-4 rounded-lg shadow-md">
-                  <div className="flex justify-center mb-4">
-                    <Image
-                      src="/placeholder.svg?height=100&width=100"
-                      alt="Contact icon"
-                      width={100}
-                      height={100}
-                      className="rounded-lg"
-                    />
-                  </div>
-
-                  <form className="space-y-3">
-                    <Input type="text" placeholder="Your Name" />
-                    <Input type="email" placeholder="Your Email" />
-                    <Input type="tel" placeholder="Phone Number" />
-                    <Input type="text" placeholder="Services" />
-                    <Button className="w-full bg-[#0076b2] hover:bg-[#29567a]">SEND MESSAGE</Button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+      
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#ecdfcf] py-4 text-center text-sm text-[#606060]">
-        <div className="container mx-auto px-4">
-          <p>• Terms & Conditions - Privacy Policy - Sitemap | powered by eshani.com</p>
-        </div>
-      </footer>
+
     </div>
   )
 }

@@ -10,14 +10,18 @@ export const productCategories = [
                     {
                     "name": "DX-450EP WEIGHING SCALE",
                     "href": "/products/essae/digital-weighing-machine/dx-450ep-weighing-scale",
+                    "image": "dx-450EP_axkimt"
+                   
                 },
                     {
                     "name": "SI-850 MILK WEIGHER",
                     "href": "/products/essae/digital-weighing-machine/si-850-milk-weigher",
+                    "image" : "milk-weighing_hmugaz"
                 },
                     {
                     "name": "DX-852 WEIGHING SCALE",
                     "href": "/products/essae/digital-weighing-machine/dx-852-weighing-scale",
+                    "image": ""
                 },
                     {
                     "name": "DS-252 WEIGHING SCALE",

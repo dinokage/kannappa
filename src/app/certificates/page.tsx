@@ -13,7 +13,6 @@ export default function GalleryPage() {
     {id: 6, src: "/gallery/gallery/certificate6.png", alt: "Factory workers discussing"},
     {id: 7, src: "/gallery/gallery/certificate7.png", alt: "Factory workers discussing"},
     {id: 9, src: "/gallery/gallery/certificate8.png", alt: "Factory workers discussing"},
-    {id: 10, src: "/gallery/certificate9.png", alt: "Factory workers discussing"}
    
   ]
 
