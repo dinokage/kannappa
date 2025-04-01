@@ -29,7 +29,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="mx-auto container rounded-b-lg sticky top-0 z-2 bg-gradient-to-l from-[#60A7C1] to-[#FFF9E3] py-3 px-4 md:px-6 lg:px-12">
+    <div className="mx-auto container rounded-b-lg sticky top-0 z-20 bg-gradient-to-l from-[#60A7C1] to-[#FFF9E3] py-3 px-4 md:px-6 lg:px-12">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-8">
           <Link href="/" className="flex items-center">
@@ -79,7 +79,7 @@ export default function Navbar() {
                                   <DropdownMenuSubTrigger className="w-full">
                                     {category.name}
                                   </DropdownMenuSubTrigger>
-                                  <DropdownMenuSubContent className="w-56">
+                                  <DropdownMenuSubContent className="w-56 overflow-y-scroll max-h-96">
                                     {category.items.map((item) => (
                                      <DropdownMenuItem key={item.name}>
                                      <Link href={item.href} className="w-full">

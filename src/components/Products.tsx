@@ -3,7 +3,7 @@ import ProductCard from "./ProductCard";
 
 const products = [
   {
-    name: "Atlas Copco",
+    name: "ATLAS COPCO",
     description:
       "Atlas Copco is a global, industrial company based in Stockholm, Sweden, with almost 40,000 employees and customers in more than 180 countries.",
     url: "/logos/atlas-copco.png",
@@ -15,7 +15,7 @@ const products = [
     url: "/logos/sew.png",
   },
   {
-    name: "SPX johnson",
+    name: "SPX JOHNSON",
     description:
       "For more than 75 years SPX FLOW Johnson Pump brand pumps have been developed, manufactured and marketed for industrial use.",
     url: "/logos/spx.png",
@@ -27,13 +27,13 @@ const products = [
     url: "/logos/xylem.png",
   },
   {
-    name: "Kirloskar",
+    name: "KIRLOSKAR",
     description:
       "At the heart of agriculture, industry and economy, we are there. Our aim is to empower people, enhance business strengthen infrastructure.",
     url: "/logos/kirloskar.png",
   },
   {
-    name: "Nilfisk",
+    name: "NILFISK",
     description:
       "Nilfisk was founded on a vision of  producing & selling products of the highest quality worldwide. Nilfisk has responded to the changing needs of markets.",
     url: "/logos/nilfisk.png",
@@ -42,9 +42,9 @@ const products = [
 
 function HomeProducts() {
   return (
-    <div className="container mx-auto px-4 py-6">
+    <div className="container max-w-7xl mx-auto px-4 py-6">
       
-        <h1 className="mx-10 p-10 text-4xl font-bold ">
+        <h1 className="mt-4 text-4xl font-bold ">
           Our Products
         </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-10 gap-8 mx-10">

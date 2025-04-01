@@ -28,7 +28,7 @@ const Carousel = () => {
   }, [current])
 
   return (
-    <div className="relative w-full h-[60vh]">
+    <div className="conatainer mx-auto relative max-w-7xl h-[60vh]">
       {slides.map((slide, index) => (
         <div
           key={index}
