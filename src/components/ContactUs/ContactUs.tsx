@@ -65,9 +65,10 @@ export default function Contact() {
                 <Input type="email" placeholder="Your Email" className=" p-3 text-[#FFF9E3]  w-full" />
                 <Input type="text" placeholder="Phone Number" className="p-3 text-[#FFF9E3] w-full" />
                 <Input type="text" placeholder="Services" className=" p-3 text-[#FFF9E3] w-full" />
+                
                 <textarea
                   placeholder="Message"
-                  className=" p-3 w-full text-[#FFF9E3] h-32 rounded-lg"
+                  className=" p-3 w-full bg-[#29567A] text-[#FFF9E3] h-32  shadow-lg relative rounded-lg "
                 ></textarea>
               </div>
               <button className="bg-[#ECDFCF] hover:bg-[#29567A] text-[#FFF9E3] font-bold py-2 px-4 rounded mt-4 h-fit w-full">
