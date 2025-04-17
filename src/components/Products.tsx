@@ -14,8 +14,8 @@ export default function CompanyCards() {
             <Image
               src="/logos/essae.png?height=150&width=200"
               alt="Essae device"
-              width={500}
-              height={500}
+              width={200}
+              height={200}
               className="mx-auto"
             />
           </div>
@@ -30,8 +30,8 @@ export default function CompanyCards() {
             <Image
               src="/logos/nalco.png?height=150&width=200"
               alt="nalco"
-              width={500}
-              height={500}
+              width={200}
+              height={200}
               className="mx-auto"
             />
           </div>
@@ -45,8 +45,8 @@ export default function CompanyCards() {
             <Image
               src="/logos/stanvac.png?height=150&width=200"
               alt="stanvac"
-              width={500}
-              height={500}
+              width={200}
+              height={200}
               className="mx-auto"
             />
           </div>
@@ -64,8 +64,8 @@ export default function CompanyCards() {
             <Image
               src="/logos/cipy.png?height=150&width=200"
               alt="cipy"
-              width={500}
-              height={500}
+              width={200}
+              height={200}
               className="mx-auto"
             />
           </div>
@@ -80,8 +80,8 @@ export default function CompanyCards() {
             <Image
               src="/logos/energies.png?height=150&width=200"
               alt="energies"
-              width={500}
-              height={500}
+              width={200}
+              height={200}
               className="mx-auto"
             />
           </div>

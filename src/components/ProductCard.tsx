@@ -6,7 +6,7 @@ export default function ProductCard({name, description, url}: {name: string, des
       <div className="max-w-4xl mx-auto overflow-hidden rounded-lg shadow-md">
         <div className="flex flex-col md:flex-row">
           {/* Left side with logo and equipment image */}
-          <div className="p-6 flex flex-col items-center justify-center bg-white md:w-2/5">
+          <div className="p-6 flex flex-col items-center justify-cente md:w-2/5">
             {/* <div className="mb-6">
               <Image
                 src={url}

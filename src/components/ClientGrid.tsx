@@ -14,8 +14,8 @@ export default function ClientShowcase() {
               <Image
                 src="/client/client1.png"
                 alt="bissel logo"
-                width={600}
-                height={600}
+                width={400}
+                height={400}
                 className="object-contain"
               />
             </div>
@@ -26,8 +26,8 @@ export default function ClientShowcase() {
               <Image
                 src="/client/client2.png"
                 alt="devifishers logo"
-                width={600}
-                height={600}
+                width={400}
+                height={400}
                 className="object-contain"
               />
             </div>
@@ -39,8 +39,8 @@ export default function ClientShowcase() {
               <Image
                 src="/client/client3.png"
                 alt="Design Element logo"
-                width={600}
-                height={600}
+                width={400}
+                height={400}
                 className="object-contain"
               />
             </div>
@@ -51,8 +51,8 @@ export default function ClientShowcase() {
               <Image
                 src="/client/client4.png"
                 alt="pidilite logo"
-                width={600}
-                height={600}
+                width={400}
+                height={400}
                 className="object-contain"
               />
             </div>
@@ -64,8 +64,8 @@ export default function ClientShowcase() {
               <Image
                 src="/client/client5.png"
                 alt="Consultancy logo"
-                width={600}
-                height={600}
+                width={400}
+                height={400}
                 className="object-contain"
               />
             </div>
@@ -77,8 +77,8 @@ export default function ClientShowcase() {
               <Image
                 src="/client/client6.png"
                 alt="pfizer logo"
-                width={600}
-                height={600}
+                width={400}
+                height={400}
                 className="object-contain"
               />
             </div>
@@ -90,8 +90,8 @@ export default function ClientShowcase() {
               <Image
                 src="/client/client7.png"
                 alt="cpf logo"
-                width={600}
-                height={600}
+                width={400}
+                height={400}
                 className="object-contain"
               />
             </div>
@@ -102,8 +102,8 @@ export default function ClientShowcase() {
               <Image
                 src="/client/client8.png"
                 alt="united logo"
-                width={600}
-                height={600}
+                width={400}
+                height={400}
                 className="object-contain"
               />
             </div>
