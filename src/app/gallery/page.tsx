@@ -1,19 +1,20 @@
 import Image from "next/image"
 // import { Twitter, Facebook, Linkedin } from "lucide-react"
-import Link from "next/link"
+// import Link from "next/link"
 
 export default function GalleryPage() {
   // Gallery images data
   const galleryImages = [
+    { id: 1, src: "/gallery/gallery/certificate1.png", alt: "Factory workers discussing" },
+    {id: 2, src: "/gallery/gallery/certificate2.png", alt: "Factory workers discussing"},
+    {id: 3, src: "/gallery/gallery/certificate3.png", alt: "Factory workers discussing"},
+    {id: 4, src: "/gallery/gallery/certificate4.png", alt: "Factory workers discussing"},
+    {id: 5, src: "/gallery/gallery/certificate5.png", alt: "Factory workers discussing"},
+    {id: 6, src: "/gallery/gallery/certificate6.png", alt: "Factory workers discussing"},
+    {id: 7, src: "/gallery/gallery/certificate7.png", alt: "Factory workers discussing"},
+    {id: 9, src: "/gallery/gallery/certificate8.png", alt: "Factory workers discussing"},
+    {id: 9, src: "/gallery/gallery/gallery.png", alt: "Factory workers discussing"},
    
-   
-    {id: 7, src: "/gallery/gallery/image 137.png", alt: "Factory workers discussing"},
-    {id: 9, src: "/gallery/gallery/image 139.png", alt: "Factory workers discussing"},
-    {id: 10, src: "/gallery/gallery/image 140.png", alt: "Factory workers discussing"},
-    {id: 11, src: "/gallery/gallery/image 139.png", alt: "Factory workers discussing"},
-    {id: 12, src: "/gallery/gallery/image 137.png", alt: "Factory workers discussing"},
-    {id: 13, src: "/gallery/gallery/image 140.png", alt: "Factory workers discussing"},
- 
   ]
 
   return (
@@ -24,20 +25,9 @@ export default function GalleryPage() {
         <div className="container mx-auto text-center">
 
           {/* Gallery Tabs */}
-          <div className="flex justify-center space-x-8 md:space-x-16 px-4">
-            <button className="pb-2 border-b-2 border-[#00aeef] hover:text-white font-medium">Images</button>
-            <button className="pb-2 border-b-2 border-transparent text-gray-400 hover:text-white font-medium">
-              Videos
-            </button>
-            <button className="pb-2 border-b-2 border-transparent text-gray-400 hover:text-white font-medium">
-              Documents
-            </button>
-            <Link href="/certificates" className="pb-2 border-b-2 border-transparent text-gray-400 hover:text-white font-medium">
-              Certificates & Awards
-            </Link>
-          </div>
+       
         </div>
-      </div>
+      </div>                                              
 
       {/* Gallery Grid */}
       <main className="container mx-auto px-4 flex-grow mb-12">
@@ -50,9 +40,9 @@ export default function GalleryPage() {
               <Image
                 src={image.src || "/placeholder.svg"}
                 alt={image.alt}
-                width={550}
-                height={350}
-                className="w-full h-auto object-cover aspect-[4/3]"
+                width={400}
+                height={300}
+                className="w-full h-auto object-cover aspect-[2/2]"
               />
             </div>
           ))}

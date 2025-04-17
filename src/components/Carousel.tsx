@@ -5,11 +5,11 @@ import Image from 'next/image'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const slides = [
-  '/carousel/sew.png',
-  '/carousel/nilfisk.png',
-  '/carousel/hylem.png',
-  '/carousel/johnson.png',
-  '/carousel/kirloskar.png'
+  '/carousel/Group 87.png',
+  '/carousel/Group 87.png',
+  '/carousel/Group 87.png',
+  '/carousel/Group 87.png',
+  '/carousel/Group 87.png'
 ]
 const Carousel = () => {
   const [current, setCurrent] = useState(0)
