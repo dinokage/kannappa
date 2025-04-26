@@ -14,7 +14,7 @@ export default function LocationSection() {
                 <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
               </div>
               <div className="text-[#252525] text-sm sm:text-base">
-                <p className="font-medium">Classique Engineering Enterprises</p>
+                <p className="font-medium">Eshani Classique Engineering Enterprises</p>
                 <p># 39-11-3/2, 1st Floor, Above Punjab National Bank,</p>
                 <p>Muralinagar, Bank Street, Sector -11,</p>
                 <p>Visakhapatnam - 530007, AP, India.</p>
@@ -26,7 +26,7 @@ export default function LocationSection() {
                 <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
               </div>
               <div className="text-[#252525] text-sm sm:text-base">
-                <p className="break-words">info@classique.co.in & sales@classique.co.in</p>
+                <p className="break-words">[to be provided by client]</p>
               </div>
             </div>
 
@@ -35,7 +35,7 @@ export default function LocationSection() {
                 <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
               </div>
               <div className="text-[#252525] text-sm sm:text-base">
-                <p className="whitespace-normal">+91 - 9348754999 | +91 - 8096666686</p>
+                <p className="whitespace-normal">[to be provided by client]</p>
               </div>
             </div>
           </div>

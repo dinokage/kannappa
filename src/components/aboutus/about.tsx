@@ -10,6 +10,7 @@ export default function Home() {
         {/* About Company Section */}
         <section className="container mx-auto py-12 px-4">
           <h2 className="text-[#252525] text-3xl md:text-4xl font-bold mb-8">ABOUT COMPANY</h2>
+          <h2 className="text-[#252525] text-3xl md:text-4xl font-bold mb-8">[to be provided by client]</h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-6">
