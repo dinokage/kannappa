@@ -23,8 +23,11 @@ export default function Contact() {
               <p># 39-11-3/2, 1st Floor, Above Punjab National Bank of Commerce, Muralinagar, Bank Street, Sector-11, Visakhapatnam - 530007, AP, India.</p>                                 
               
               <p className="font-semibold">Register Office</p>
-              <p>APIIE E Block,Plot No 54,Autonagar,Gajuwaka,               
-              Visakhapatnam – 530007, AP, India.</p>
+              <p>
+                Address: #HIG No. 76, OPP Ebenezer Nursing Home,
+                Aganampudi to Duvvada Rly Station Rd,
+                Talarivanipalem, Visakhapatnam, 530053.
+              </p>
             </div>
           </div>
 
@@ -41,7 +44,7 @@ export default function Contact() {
             <Image src="/contact/eshanicontact3.png" alt="Email Address" width={100} height={100} className="w-12 h-12" />
             <div>
               <p className="font-semibold">Email Address</p>
-              <p>info@classique.co.in / kk@classique.co.in</p>
+              <p>info@classique.co.in / sales@classique.co.in</p>
             </div>
           </div>
         </div>
@@ -68,10 +71,10 @@ export default function Contact() {
                 
                 <textarea
                   placeholder="Message"
-                  className=" p-3 w-full bg-[#29567A] text-[#FFF9E3] h-32  shadow-lg relative rounded-lg "
+                  className=" p-3 w-full bg-[#29567A] text-[#FFF9E3] h-32 border- relative rounded-lg "
                 ></textarea>
               </div>
-              <button className="bg-[#ECDFCF] hover:bg-[#29567A] text-[#FFF9E3] font-bold py-2 px-4 rounded mt-4 h-fit w-full">
+              <button className="bg-[#29567A] hover:bg-[#ECDFCF] hover:text-black text-[#FFF9E3] font-bold py-2 px-4 rounded mt-4 h-fit w-full">
                 SEND MESSAGE                 
               </button>
             </form>

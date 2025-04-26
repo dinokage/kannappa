@@ -46,7 +46,7 @@ const Carousel = () => {
       ))}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
         <h2 className="text-2xl font-bold">Lab-tested.Industry-approved.</h2>
-        <p className="text-lg font-bold">"Results that speak precision".</p>
+        <p className="text-lg font-bold">&quot;Results that speak precision&quot;.</p>
       </div>
       <button
         className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"

@@ -1,6 +1,6 @@
 import Carousel from "@/components/Carousel";
 import ClientShowcase from "@/components/ClientGrid";
-import Location from "@/components/Location";
+import LocationSection from "@/components/Location";
 import HomeProducts from "@/components/Products";
 // import Image from "next/image";
 
@@ -10,7 +10,7 @@ export default function Home() {
     <Carousel />
     <HomeProducts />
     <ClientShowcase />
-    <Location />
+    <LocationSection />
     </>
   );
 }

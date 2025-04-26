@@ -79,7 +79,7 @@ export default function ProductItemPage({ params }: ProductItemPageProps) {
   }
 
   // Determine if we have an image for this product
-  const hasImage = item.image && item.image.length > 0;
+  // const hasImage = item.image && item.image.length > 0;
   
   return (
     <div>
@@ -135,21 +135,18 @@ export default function ProductItemPage({ params }: ProductItemPageProps) {
                   Request a Quote
                 </Link>
                 
-                <button className="ml-4 inline-block border border-[#29567A] text-[#29567A] py-3 px-6 rounded-lg hover:bg-gray-50 transition-colors">
-                  Download Spec Sheet
-                </button>
+                
               </div>
             </div>
           </div>
           
           <div className="md:w-1/2 bg-gray-50 p-8 flex items-center justify-center">
-            {hasImage ? (
+            {item.image ? (
               <CloudinaryImage
                 src={item.image}
                 alt={item.name}
                 width={400}
                 height={400}
-                className="object-contain max-h-[400px]"
               />
             ) : (
               <div className="w-full h-[400px] bg-gray-200 flex items-center justify-center">

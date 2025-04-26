@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, ArrowUp } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 
 export default function CompanyCards() {
   return (
@@ -99,16 +99,6 @@ export default function CompanyCards() {
           </Link>
         </div>
       </div>
-
-      {/* Top button */}
-      <Link
-        href="#top"
-        className="absolute right-4 top-1/2 bg-blue-600 text-white rounded-full p-2 flex items-center justify-center"
-        aria-label="Back to top"
-      >
-        <ArrowUp className="h-5 w-5" />
-        <span className="text-xs font-bold absolute -bottom-5">TOP</span>
-      </Link>
     </div>
   )
 }
