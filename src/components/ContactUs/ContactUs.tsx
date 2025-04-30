@@ -18,9 +18,7 @@ export default function Contact() {
 
           <div className="flex items-center space-x-4">
             <Image src="/contact/eshanicontact.png" alt="Sales Office" className="w-12 h-12" width={100} height={100}/>
-            <div>                                            
-              <p className="font-semibold">Sales Office</p>
-              <p># 39-11-3/2, 1st Floor, Above Punjab National Bank of Commerce, Muralinagar, Bank Street, Sector-11, Visakhapatnam - 530007, AP, India.</p>                                 
+            <div>                                                                           
               
               <p className="font-semibold">Register Office</p>
               <p>
