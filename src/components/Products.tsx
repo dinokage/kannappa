@@ -20,7 +20,7 @@ export default function CompanyCards() {
             />
           </div>
           
-          <Link href="#" className="border border-dashed rounded-md px-4 py-2 inline-flex items-center text-sm">
+          <Link href="/products/essae" className="border border-dashed rounded-md px-4 py-2 inline-flex items-center text-sm">
             Read More <ArrowRight className="ml-1 h-4 w-4" />
           </Link>
         </div>
@@ -35,7 +35,7 @@ export default function CompanyCards() {
               className="mx-auto"
             />
           </div>
-          <Link href="#" className="border border-dashed rounded-md px-4 py-2 inline-flex items-center text-sm">
+          <Link href="/products/nalco" className="border border-dashed rounded-md px-4 py-2 inline-flex items-center text-sm">
             Read More <ArrowRight className="ml-1 h-4 w-4" />
           </Link>
         </div>
@@ -51,7 +51,7 @@ export default function CompanyCards() {
             />
           </div>
          
-          <Link href="#" className="border border-dashed rounded-md px-4 py-2 inline-flex items-center text-sm">
+          <Link href="/products/stanvac" className="border border-dashed rounded-md px-4 py-2 inline-flex items-center text-sm">
             Read More <ArrowRight className="ml-1 h-4 w-4" />
           </Link>
         </div>
@@ -70,7 +70,7 @@ export default function CompanyCards() {
             />
           </div>
          
-          <Link href="#" className="border border-dashed rounded-md px-4 py-2 inline-flex items-center text-sm">
+          <Link href="/products/drcipy" className="border border-dashed rounded-md px-4 py-2 inline-flex items-center text-sm">
             Read More <ArrowRight className="ml-1 h-4 w-4" />
           </Link>
         </div>
@@ -94,7 +94,7 @@ export default function CompanyCards() {
               className="mx-auto"
             />
           </div> */}
-          <Link href="#" className="border border-dashed rounded-md px-4 py-2 inline-flex items-center text-sm">
+          <Link href="/total-lubricants" className="border border-dashed rounded-md px-4 py-2 inline-flex items-center text-sm">
             Read More <ArrowRight className="ml-1 h-4 w-4" />
           </Link>
         </div>

@@ -24,9 +24,9 @@ export default function Contact() {
               
               <p className="font-semibold">Register Office</p>
               <p>
-                Address: #HIG No. 76, OPP Ebenezer Nursing Home,
-                Aganampudi to Duvvada Rly Station Rd,
-                Talarivanipalem, Visakhapatnam, 530053.
+                Address: ESHANI CLASSIQUE ENGINEERED ENTERPRISE
+D.No.39-24-22/1,First Floor,Narasimhanagar,
+Madhavadhara,Visakhapatnam-530007.
               </p>
             </div>
           </div>
@@ -36,7 +36,7 @@ export default function Contact() {
                                                                  
             <div>
               <p className="font-semibold">Phone Number</p>
-              <p>+91 9348754999 / +91 8096666686</p>
+              <p>+91 9346388007 / +91 6303804244</p>
             </div>
           </div>
 
@@ -44,7 +44,7 @@ export default function Contact() {
             <Image src="/contact/eshanicontact3.png" alt="Email Address" width={100} height={100} className="w-12 h-12" />
             <div>
               <p className="font-semibold">Email Address</p>
-              <p>info@classique.co.in / sales@classique.co.in</p>
+              <p>chc@eshaniclassique.com / sales@eshaniclassique.com</p>
             </div>
           </div>
         </div>

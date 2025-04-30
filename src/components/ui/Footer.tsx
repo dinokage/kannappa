@@ -51,20 +51,23 @@ export default function Footer() {
           <div className="w-full md:w-1/4 space-y-4">
             <h3 className="text-xl font-medium">Quick Links</h3>
             <nav className="flex flex-col space-y-2">
-              <Link href="#" className="hover:underline">
+              <Link href="/" className="hover:underline">
                 Home
               </Link>
-              <Link href="#" className="hover:underline">
+              <Link href="/aboutus" className="hover:underline">
                 About Us
               </Link>
-              <Link href="#" className="hover:underline">
+              <Link href="/products" className="hover:underline">
                 Products
               </Link>
-              <Link href="#" className="hover:underline">
-                Services
+              <Link href="/gallery" className="hover:underline">
+                Gallery
               </Link>
-              <Link href="#" className="hover:underline">
+              <Link href="/contact" className="hover:underline">
                 Contact Us
+              </Link>
+              <Link href="/sitemap" className="hover:underline">
+                Sitemap
               </Link>
             </nav>
           </div>
@@ -85,12 +88,12 @@ export default function Footer() {
               Privacy Policy
             </Link>
             <span>-</span>
-            <Link href="#" className="hover:underline">
+            <Link href="/sitemap" className="hover:underline">
               Sitemap
             </Link>
             <span className="ml-2">powered by catchway</span>
-            <Link href="https://eshani.com" className="text-[#00aeef] hover:underline">
-              eshani.com
+            <Link href="https://eshani.co.in" className="text-[#00aeef] hover:underline">
+              eshani.co.in
             </Link>
           </div>
         </div>
@@ -98,4 +101,3 @@ export default function Footer() {
     </footer>
   )
 }
-

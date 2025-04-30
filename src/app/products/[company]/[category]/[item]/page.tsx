@@ -129,7 +129,7 @@ export default function ProductItemPage({ params }: ProductItemPageProps) {
               
               <div className="mt-8">
                 <Link
-                  href="/ContactUs"
+                  href="/contact"
                   className="inline-block bg-[#29567A] text-white py-3 px-6 rounded-lg hover:bg-[#00aeef] transition-colors"
                 >
                   Request a Quote
@@ -140,7 +140,7 @@ export default function ProductItemPage({ params }: ProductItemPageProps) {
             </div>
           </div>
           
-          <div className="md:w-1/2 bg-gray-50 p-8 flex items-center justify-center">
+          <div className="md:w-1/2 max-h-[90vh] bg-gray-50 p-8 flex items-center justify-center">
             {item.image ? (
               <CloudinaryImage
                 src={item.image}
@@ -154,7 +154,7 @@ export default function ProductItemPage({ params }: ProductItemPageProps) {
               </div>
             )}
           </div>
-        </div>
+        </div>``
       </div>
       
       <div className="mt-12">

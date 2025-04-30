@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { ChevronDown, Search } from "lucide-react"
+import { ChevronDown, Search, Menu, X } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
@@ -21,11 +21,25 @@ import { productCategories as productData } from "@/lib/products"
 
 export default function Navbar() {
   const [searchQuery, setSearchQuery] = useState("")
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileProductsOpen, setMobileProductsOpen] = useState(false)
+  const [mobileCompanyOpen, setMobileCompanyOpen] = useState<string | null>(null)
+  const [mobileCategoryOpen, setMobileCategoryOpen] = useState<{company: string, category: string} | null>(null)
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault()
     // Implement search functionality here
     console.log("Searching for:", searchQuery)
+  }
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen)
+    // Reset all nested menus when closing the main menu
+    if (mobileMenuOpen) {
+      setMobileProductsOpen(false)
+      setMobileCompanyOpen(null)
+      setMobileCategoryOpen(null)
+    }
   }
 
   return (
@@ -60,8 +74,8 @@ export default function Navbar() {
               </li>
               <li>
               <DropdownMenu>
-                  <DropdownMenuTrigger className="text-black hover:text-gray-900 px-3 py-2 rounded-md text-sm font-bold focus:outline-none">
-                    PRODUCTS{" "}
+                  <DropdownMenuTrigger className="text-[#252525] font-bold text-base uppercase hover:border-b-2 hover:border-[#252525] transition-all focus:outline-none">
+                    Products{" "}
                     <ChevronDown className="inline-block ml-1 h-4 w-4" />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent className="w-56">
@@ -121,7 +135,7 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="/ContactUs"
+                  href="/contact"
                   className="text-[#252525] font-bold text-base uppercase hover:border-b-2 hover:border-[#252525] transition-all"
                 >
                   CONTACT US
@@ -150,23 +164,16 @@ export default function Navbar() {
           </form>
         </div>
 
-        <button className="block lg:hidden" aria-label="Menu">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="text-[#252525]"
-          >
-            <line x1="4" x2="20" y1="12" y2="12" />
-            <line x1="4" x2="20" y1="6" y2="6" />
-            <line x1="4" x2="20" y1="18" y2="18" />
-          </svg>
+        <button 
+          className="block lg:hidden" 
+          aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+          onClick={toggleMobileMenu}
+        >
+          {mobileMenuOpen ? (
+            <X className="text-[#252525] h-6 w-6" />
+          ) : (
+            <Menu className="text-[#252525] h-6 w-6" />
+          )}
         </button>
       </div>
 
@@ -189,7 +196,188 @@ export default function Navbar() {
           </button>
         </form>
       </div>
+
+      {/* Mobile Navigation Menu */}
+      {mobileMenuOpen && (
+        <div className="fixed inset-0 z-50 lg:hidden">
+          <div 
+            className="fixed inset-0 bg-black/25" 
+            aria-hidden="true"
+            onClick={toggleMobileMenu}
+          />
+          
+          <div className="fixed inset-y-0 right-0 w-full max-w-xs bg-white shadow-lg p-6 overflow-y-auto">
+            <div className="flex items-center justify-between mb-8">
+              <div className="relative h-10 overflow-hidden rounded-md">
+                <Image
+                  src="/logo.png"
+                  alt="Eshani Logo"
+                  width={120}
+                  height={120}
+                />
+              </div>
+              <button
+                type="button"
+                className="-m-2.5 p-2.5 text-[#252525]"
+                onClick={toggleMobileMenu}
+              >
+                <X className="h-6 w-6" />
+              </button>
+            </div>
+
+            {/* Main Mobile Navigation */}
+            <div className="mt-2 flow-root">
+              <div className="-my-1">
+                <div className="py-2">
+                  <Link
+                    href="/"
+                    className="block py-2 text-[#252525] font-bold text-base uppercase"
+                    onClick={toggleMobileMenu}
+                  >
+                    Home
+                  </Link>
+                </div>
+                <div className="py-2">
+                  <Link
+                    href="/aboutus"
+                    className="block py-2 text-[#252525] font-bold text-base uppercase"
+                    onClick={toggleMobileMenu}
+                  >
+                    About Us
+                  </Link>
+                </div>
+                
+                {/* Mobile Products Menu */}
+                <div className="py-2">
+                  <button
+                    className="flex items-center justify-between w-full py-2 text-[#252525] font-bold text-base uppercase"
+                    onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
+                  >
+                    Products
+                    <ChevronDown className={`h-4 w-4 transition-transform ${mobileProductsOpen ? 'rotate-180' : ''}`} />
+                  </button>
+                  
+                  {/* First Level: Companies */}
+                  {mobileProductsOpen && (
+                    <div className="pl-4 mt-2 space-y-2">
+                      {productData.map((company) => (
+                        <div key={company.name}>
+                          {company.categories && company.categories.length > 0 ? (
+                            <>
+                              <button
+                                className="flex items-center justify-between w-full py-2 text-[#252525] font-semibold text-sm"
+                                onClick={() => 
+                                  setMobileCompanyOpen(
+                                    mobileCompanyOpen === company.name ? null : company.name
+                                  )
+                                }
+                              >
+                                {company.name}
+                                <ChevronDown 
+                                  className={`h-4 w-4 transition-transform ${
+                                    mobileCompanyOpen === company.name ? 'rotate-180' : ''
+                                  }`} 
+                                />
+                              </button>
+                              
+                              {/* Second Level: Categories */}
+                              {mobileCompanyOpen === company.name && (
+                                <div className="pl-4 mt-2 space-y-2">
+                                  {company.categories.map((category) => (
+                                    <div key={category.name}>
+                                      {category.items && category.items.length > 0 ? (
+                                        <>
+                                          <button
+                                            className="flex items-center justify-between w-full py-1 text-[#252525] font-semibold text-sm"
+                                            onClick={() => 
+                                              setMobileCategoryOpen(
+                                                mobileCategoryOpen?.company === company.name && 
+                                                mobileCategoryOpen?.category === category.name 
+                                                  ? null 
+                                                  : { company: company.name, category: category.name }
+                                              )
+                                            }
+                                          >
+                                            {category.name}
+                                            <ChevronDown 
+                                              className={`h-3 w-3 transition-transform ${
+                                                mobileCategoryOpen?.company === company.name &&
+                                                mobileCategoryOpen?.category === category.name 
+                                                  ? 'rotate-180' 
+                                                  : ''
+                                              }`} 
+                                            />
+                                          </button>
+                                          
+                                          {/* Third Level: Items */}
+                                          {mobileCategoryOpen?.company === company.name &&
+                                           mobileCategoryOpen?.category === category.name && (
+                                            <div className="pl-4 mt-1 space-y-1">
+                                              {category.items.map((item) => (
+                                                <Link
+                                                  key={item.name}
+                                                  href={item.href}
+                                                  className="block py-1 text-[#252525] text-sm"
+                                                  onClick={toggleMobileMenu}
+                                                >
+                                                  {item.name}
+                                                </Link>
+                                              ))}
+                                            </div>
+                                          )}
+                                        </>
+                                      ) : (
+                                        <Link
+                                          href={category.href}
+                                          className="block py-1 text-[#252525] font-semibold text-sm"
+                                          onClick={toggleMobileMenu}
+                                        >
+                                          {category.name}
+                                        </Link>
+                                      )}
+                                    </div>
+                                  ))}
+                                </div>
+                              )}
+                            </>
+                          ) : (
+                            <Link
+                              href={company.href}
+                              className="block py-2 text-[#252525] font-semibold text-sm"
+                              onClick={toggleMobileMenu}
+                            >
+                              {company.name}
+                            </Link>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+                
+                <div className="py-2">
+                  <Link
+                    href="/gallery"
+                    className="block py-2 text-[#252525] font-bold text-base uppercase"
+                    onClick={toggleMobileMenu}
+                  >
+                    Gallery
+                  </Link>
+                </div>
+                <div className="py-2">
+                  <Link
+                    href="/contact"
+                    className="block py-2 text-[#252525] font-bold text-base uppercase"
+                    onClick={toggleMobileMenu}
+                  >
+                    Contact Us
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
-

@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { useRouter } from 'next/navigation'
 
 const slides = [
   '/carousel/carousel.png',
@@ -13,6 +14,7 @@ const slides = [
 ]
 const Carousel = () => {
   const [current, setCurrent] = useState(0)
+  const router = useRouter()
 
   const nextSlide = () => {
     setCurrent(current === slides.length - 1 ? 0 : current + 1)
@@ -61,7 +63,7 @@ const Carousel = () => {
         <ChevronRight size={24} />
       </button>
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
-        <button className="bg-blue-600 text-white px-2 py-2 rounded-full hover:bg-blue-600">
+        <button className="bg-blue-600 text-white px-2 py-2 rounded-full hover:bg-blue-600" onClick={() => router.push('/products')}>
           See More
         </button>
       </div>

@@ -147,7 +147,7 @@ export const productCategories: ProductGroup[] = [
           {
             name: "3D Trasar Cooling Tower",
             href: "/products/nalco/cooling-water-treatment/3d-trasar-cooling-tower",
-            image: "closedloopsystemtreatment_x1vct2",
+            image: "rooftop-air-con-system-2021-09-07-22-31-34-utc-994x1536_mtl6jh",
           },
         ],
       },
@@ -158,38 +158,30 @@ export const productCategories: ProductGroup[] = [
           {
             name: "3D TRASAR™ Technology for Boilers",
             href: "/products/nalco/boiler-water-treatment/3d-trasar-technology-for-boilers",
-            image: "",
-          },
-          {
-            name: "3D TRASAR™ Technology for Reverse Osmosis",
-            href: "/products/nalco/boiler-water-treatment/3d-trasar-technology-for-reverse-osmosis",
-            image: "",
-          },
-          {
-            name: "3D TRASAR™ Technology for Advanved Water Mangement System",
-            href: "/products/nalco/boiler-water-treatment/3d-trasar-technology-for-advanved-water-mangement-system",
-            image: "",
+            image: "BoilerHouse-550x310_shdti1",
           },
         ],
+      },
+      {
+        name: "Reverse Osmosis",
+        href: "/products/nalco/reverswe-osmosis",
+        items: [
+          {
+            name: "3D TRASAR™ Technology for Reverse Osmosis",
+            href: "/products/nalco/reverswe-osmosis/3d-trasar-technology-for-reverse-osmosis",
+            image: "industrial-ro-system-plant-and-water-treatment-plant_pqhy83",
+          },
+        ]
       },
       {
         name: "Waste Water Treatment",
         href: "/products/nalco/waste-water-treatment",
         items: [
-          {
-            name: "3D TRASAR™ Technology for DAF",
-            href: "/products/nalco/waste-water-treatment/3d-trasar-technology-for-daf",
-            image: "",
-          },
+          
           {
             name: "3D TRASAR™ Technology for Advanced Water Management System",
             href: "/products/nalco/waste-water-treatment/3d-trasar-technology-for-advanced-water-management-system",
-            image: "",
-          },
-          {
-            name: "Water Quality Intelligence: Powered by ECOLAB3D™",
-            href: "/products/nalco/waste-water-treatment/water-quality-intelligence-powered-by-ecolab3d",
-            image: "",
+            image: "360_F_909567388_zSAwZIKLSv9FN5nqGQ5PykgcXTDbb7Y1_v8phjn",
           },
         ],
       },
@@ -214,135 +206,14 @@ export const productCategories: ProductGroup[] = [
             href: "/products/drcipy/flooring/pu",
             image: "",
           },
-          {
-            name: "EPU",
-            href: "/products/drcipy/flooring/epu",
-            image: "",
-          },
-          {
-            name: "Concrete",
-            href: "/products/drcipy/flooring/concrete",
-            image: "",
-          },
-          {
-            name: "Polyaspartic",
-            href: "/products/drcipy/flooring/polyaspartic",
-            image: "",
-          },
-          {
-            name: "Novalac",
-            href: "/products/drcipy/flooring/novalac",
-            image: "",
-          },
+                   
           {
             name: "Breathable Flooring",
             href: "/products/drcipy/flooring/breathable-flooring",
             image: "",
           },
-          {
-            name: "Polished Concrete Top",
-            href: "/products/drcipy/flooring/polished-concrete-top",
-            image: "",
-          },
         ],
       },
-      {
-        name: "Decorative Flooring",
-        href: "/products/drcipy/decorative-flooring",
-        items: [
-          {
-            name: "Decorative Floor",
-            href: "/products/drcipy/decorative-flooring/decorative-floor",
-            image: "",
-          },
-        ],
-      },
-      {
-        name: "ESD Flooring",
-        href: "/products/drcipy/esd-flooring",
-        items: [
-          {
-            name: "ESD Floor",
-            href: "/products/drcipy/esd-flooring/esd-floor",
-            image: "",
-          },
-        ],
-      },
-      {
-        name: "Hygenic Flooring",
-        href: "/products/drcipy/hygenic-flooring",
-        items: [
-          {
-            name: "Hygenic Floor",
-            href: "/products/drcipy/hygenic-flooring/hygenic-floor",
-            image: "",
-          },
-        ],
-      },
-      {
-        name: "Protective Coating",
-        href: "/products/drcipy/protective-coating",
-        items: [
-            {
-                name: "Epoxy",
-                href: "/products/drcipy/protective-coating/epoxy",
-                image: "",
-            },
-            {
-                name: "PU",
-                href: "/products/drcipy/protective-coating/pu",
-                image: "",
-            },
-            {
-                name: "MCU",
-                href: "/products/drcipy/protective-coating/mcu",
-                image: "",
-            }
-        ]
-      },
-      {
-        name: "Underlays",
-        href: "/products/drcipy/underlays",
-        items: [
-            {
-                name: "Cementitious",
-                href: "/products/drcipy/underlays/cementitious",
-                image: "",
-            },
-            {
-                name: "ECC",
-                href: "/products/drcipy/underlays/ecc",
-                image: "",
-            }
-        ]
-      },
-      {
-        name: "Repair Mortars",
-        href: "/products/drcipy/repair-mortars",
-        items: [
-            {
-                name: "Epoxy",
-                href: "/products/drcipy/repair-mortars/epoxy",
-                image: "",
-            },
-            {
-                name: "PU Concrete",
-                href: "/products/drcipy/repair-mortars/pu-concrete",
-                image: "",
-            }
-        ]
-      },
-      {
-        name: "Sealants",
-        href: "/products/drcipy/sealants",
-        items: [
-            {
-                name: "Sealants",
-                href: "/products/drcipy/sealants/sealants",
-                image: "",
-            }
-        ]
-      }
     ],
   },
 
@@ -351,41 +222,55 @@ export const productCategories: ProductGroup[] = [
     href: "/products/stanvac",
     categories: [
       {
-        name: "products",
+        name: "Products",
         href: "/products/stanvac/products",
         items: [
           {
             name: "Aerosol Sprays",
             href: "/products/stanvac/products/aerosol-sprays",
+            image: "aerosol-sprays-img_kv3a5u"
           },
           {
             name: "Super Hydrophobic Anti Corrosion",
             href: "/products/stanvac/products/super-hydrophobic-anti-corrosion",
+            image: "super-hydrophobic-anti-_egn8mq"
           },
           {
             name: "Electrical Insulation",
             href: "/products/stanvac/products/electrical-insulation",
+            image: "bulk-electrical-insulation_dtsemn"
+
           },
           {
             name: "Synthetic Greases",
             href: "/products/stanvac/products/synthetic-greases",
+            image: "synthetic-greases_ogsnc3"
           },
           {
             name: "Ceramic Coatings & Putties",
             href: "/products/stanvac/products/ceramic-coatings-putties",
+            image: "ceramic-coatings-putties_m0fjfk"
           },
           {
-            name: "Maintenance Welding Electrodes",
-            href: "/products/stanvac/products/maintenance-welding-electrodes",
+            name: "Passive Fire Protection",
+            href: "/products/stanvac/products/passive-fire-protection",
+            image: "passive_zkhjia"
           },
           {
             name: "Concrete Protection",
             href: "/products/stanvac/products/concrete-protection",
+            image: "concrete-protection_nzpnmh"
           },
           {
             name: "HT & LT Joint Protection & Power Loss Prevention",
             href: "/products/stanvac/products/ht-lt-joint-protection-power-loss-prevention",
+            image: "ht-lt-joint-protection-power_qub1bq"
           },
+          {
+            name: "Di-electric Insulation flooring",
+            href: "/products/stanvac/products/di-electric-insulation-flooring",
+            image: "dielectric-flooring-service-500x500_bvo8dw"
+          }
         ],
       },
     ],
@@ -402,62 +287,60 @@ export const productCategories: ProductGroup[] = [
           {
             name: "Dhaara Smart Meter",
             href: "/products/kristsnam/ultra-sonic-water-flow-meter/dhaara-smart-meter",
-          },
-          {
-            name: "Manual Meters",
-            href: "/products/kristsnam/ultra-sonic-water-flow-meter/manual-meters",
+            image: "D6_jnl1ih"
           },
           {
             name: "Digital Meter",
             href: "/products/kristsnam/ultra-sonic-water-flow-meter/digital-meter",
+            image: "DhaaraDigital_bvhr3u"
           },
         ],
       },
     ],
   },
   {
-    name: "Total Lubricants",
-    href: "/products/total-lubricants",
+    name: "Total energies",
+    href: "/products/total-energies",
     categories: [
         {
-            name: "Industrial Lubricants",
-            href: "/products/total-lubricants/industrial-lubricants",
+            name: "Industrial energies",
+            href: "/products/total-energies/industrial-energies",
             items: [
                 {
                     name: "DACNIS 32",
-                    href: "/products/total-lubricants/industrial-lubricants/dacnis-32",
-                    image: "",
+                    href: "/products/total-energies/industrial-energies/dacnis-32",
+                    image: "52213_c0VTTWp4SkxvdjhKVk15WU5Odm5aUVBOaFUzMUwzZERJVzM2WTlheFc1bz0_cqdjmx",
                 },
                 {
                     name: "DACNIS LD 32",
-                    href: "/products/total-lubricants/industrial-lubricants/dacnis-ld-32",
-                    image: "",
+                    href: "/products/total-energies/industrial-energies/dacnis-ld-32",
+                    image: "52213_c0VTTWp4SkxvdjhKVk15WU5Odm5aUVBOaFUzMUwzZERJVzM2WTlheFc1bz0_cqdjmx",
                 },
                 {
                     name: "DACNIS 100",
-                    href: "/products/total-lubricants/industrial-lubricants/dacnis-100",
-                    image: "",
+                    href: "/products/total-energies/industrial-energies/dacnis-100",
+                    image: "52213_c0VTTWp4SkxvdjhKVk15WU5Odm5aUVBOaFUzMUwzZERJVzM2WTlheFc1bz0_cqdjmx",
                 },
                 {
                     name: "DACNIS 100",
-                    href: "/products/total-lubricants/industrial-lubricants/dacnis-100",
-                    image: "",
+                    href: "/products/total-energies/industrial-energies/dacnis-100",
+                    image: "52213_c0VTTWp4SkxvdjhKVk15WU5Odm5aUVBOaFUzMUwzZERJVzM2WTlheFc1bz0_cqdjmx",
                 }
             ]
         },
         {
             name: "Industrial Grease",
-            href: "/products/total-lubricants/industrial-grease",
+            href: "/products/total-energies/industrial-grease",
             items: [
                 {
                     name: "MULTIS XL 3+ NEW AGE GREASE",
-                    href: "/products/total-lubricants/industrial-grease/multis-xl-3-new-age-grease",
-                    image: "",
+                    href: "/products/total-energies/industrial-grease/multis-xl-3-new-age-grease",
+                    image: "total-multis-xl-3-grease_z6jmv7",
                 },
                 {
                     name: "DACNIS LD 68",
-                    href: "/products/total-lubricants/industrial-grease/dacnis-ld-68",
-                    image: "",
+                    href: "/products/total-energies/industrial-grease/dacnis-ld-68",
+                    image: "52213_c0VTTWp4SkxvdjhKVk15WU5Odm5aUVBOaFUzMUwzZERJVzM2WTlheFc1bz0_cqdjmx",
                 }
             ]
         }
