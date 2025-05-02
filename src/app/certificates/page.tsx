@@ -20,19 +20,19 @@ export default function GalleryPage() {
     <div className="flex flex-col min-h-screen">
 
       {/* Gallery Header */}
-      <div className=" text-black py-8 rounded-b-[50px] mb-6">
-        <div className="container mx-auto text-center">
+      <div className="text-black py-8 rounded-b-[50px] mb-6">
+        <div className="container mx-auto text-center px-4">
 
-          {/* Gallery Tabs */}
-          <div className="flex justify-center space-x-8 md:space-x-16 px-4">
-            <button className="pb-2 border-b-2  text-gray-400 font-medium">Images</button>
-            <button className="pb-2 border-b-2 border-transparent text-gray-400 hover:text-white font-medium">
+          {/* Gallery Tabs - Responsive layout */}
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8">
+            <button className="pb-2 border-b-2 text-gray-400 font-medium text-sm sm:text-base">Images</button>
+            <button className="pb-2 border-b-2 border-transparent text-gray-400 hover:text-white font-medium text-sm sm:text-base">
               Videos
             </button>
-            <button className="pb-2 border-b-2 border-transparent text-gray-400 hover:text-white font-medium">
+            <button className="pb-2 border-b-2 border-transparent text-gray-400 hover:text-white font-medium text-sm sm:text-base">
               Documents
             </button>
-            <button className="pb-2 border-b-2 border-transparent text-black hover:text-white font-medium">
+            <button className="pb-2 border-b-2 border-transparent text-black hover:text-white font-medium text-sm sm:text-base">
               Certificates & Awards
             </button>
           </div>
@@ -64,4 +64,3 @@ export default function GalleryPage() {
     </div>
   )
 }
-
