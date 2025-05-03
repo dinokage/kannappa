@@ -116,13 +116,11 @@ export default function ProductItemPage({ params }: ProductItemPageProps) {
                 </p>
                 
                 <div className="border-t border-gray-200 pt-6 mt-auto">
-                  <h3 className="text-xl font-semibold mb-4">Key Features</h3>
+                  <h3 className="text-xl font-semibold mb-4">TECHNICAL SPECIFICATIONS</h3>
                   <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                    <li>High quality build and materials</li>
-                    <li>Energy efficient design</li>
-                    <li>Long-lasting performance</li>
-                    <li>Industry-leading warranty</li>
-                    <li>Expert technical support</li>
+                    {item.specs?.map( (spec, index) => (
+                      <li key={index}>{spec}</li>
+                    ))}
                   </ul>
                 </div>
               </div>
