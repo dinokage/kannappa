@@ -401,6 +401,14 @@ ProductGroup[] = [
             name: "3D Trasar Cooling Tower",
             href: "/products/nalco/cooling-water-treatment/3d-trasar-cooling-tower",
             image: "rooftop-air-con-system-2021-09-07-22-31-34-utc-994x1536_mtl6jh",
+            specs:[
+              "Scale Inhibitors",
+"Corrosion Inhibitors",
+"Biocides",
+"Oxygen Scavengers",
+"Corrosion Inhibitors",
+"Internal Treatments",
+             ]
           },
         ],
       },
@@ -412,6 +420,15 @@ ProductGroup[] = [
             name: "3D TRASAR™ Technology for Boilers",
             href: "/products/nalco/boiler-water-treatment/3d-trasar-technology-for-boilers",
             image: "BoilerHouse-550x310_shdti1",
+            specs:[
+              "Scale Inhibitors",
+"Corrosion Inhibitors",
+"Biocides",
+"Oxygen Scavengers",
+"Corrosion Inhibitors",
+"Internal Treatments",
+             ]
+            
           },
         ],
       },
@@ -423,6 +440,17 @@ ProductGroup[] = [
             name: "3D TRASAR™ Technology for Reverse Osmosis",
             href: "/products/nalco/reverswe-osmosis/3d-trasar-technology-for-reverse-osmosis",
             image: "industrial-ro-system-plant-and-water-treatment-plant_pqhy83",
+            specs:[
+              "3D TRASARTM Technology for Membranes",
+"PARETOTM Mixing Technology",
+"Water Clarification",
+"pH Adjustment",
+"Filter Aids",
+"Anti-scalants",
+ "Cleaners",
+"Resin Cleaning",
+             ]
+            
           },
         ]
       },
@@ -435,6 +463,13 @@ ProductGroup[] = [
             name: "3D TRASAR™ Technology for Advanced Water Management System",
             href: "/products/nalco/waste-water-treatment/3d-trasar-technology-for-advanced-water-management-system",
             image: "360_F_909567388_zSAwZIKLSv9FN5nqGQ5PykgcXTDbb7Y1_v8phjn",
+            specs:[
+              "Etals removal",
+"Water Clarification",
+"PH adjustment",
+"Filter Aids",
+" APEX"
+             ]
           },
         ],
       },
@@ -563,22 +598,46 @@ ProductGroup[] = [
                     name: "DACNIS 32",
                     href: "/products/total-energies/industrial-energies/dacnis-32",
                     image: "52213_c0VTTWp4SkxvdjhKVk15WU5Odm5aUVBOaFUzMUwzZERJVzM2WTlheFc1bz0_cqdjmx",
+                    specs:[
+                      "Range :DACNIS",
+"Market segment(s) :Aviation, Steel, Metalworking, Energy, Chemicals, Food processing, Textile, Automotive Manufacturing, Wood and Paper, Cement and Materials, Mining",
+"Application(s) :Compressor",
+"Viscosity :ISO VG 32",
+                     ]
                     
                 },
                 {
                     name: "DACNIS LD 32",
                     href: "/products/total-energies/industrial-energies/dacnis-ld-32",
                     image: "52213_c0VTTWp4SkxvdjhKVk15WU5Odm5aUVBOaFUzMUwzZERJVzM2WTlheFc1bz0_cqdjmx",
+                    specs:[
+                      "Range :DACNIS",
+"Market segment(s) :Aviation, Steel, Metalworking, Energy, Chemicals, Food processing, Textile, Automotive Manufacturing, Wood and Paper, Cement and Materials, Mining",
+"Application(s) :Compressor",
+"Viscosity :ISO VG 32",
+                     ]
                 },
                 {
                     name: "DACNIS 100",
                     href: "/products/total-energies/industrial-energies/dacnis-100",
                     image: "52213_c0VTTWp4SkxvdjhKVk15WU5Odm5aUVBOaFUzMUwzZERJVzM2WTlheFc1bz0_cqdjmx",
+                    specs:[
+                      "Range :DACNIS",
+"Market segment(s) :Aviation, Steel, Metalworking, Energy, Chemicals, Food processing, Textile, Automotive Manufacturing, Wood and Paper, Cement and Materials, Mining",
+"Application(s) :Compressor",
+"Viscosity :ISO VG 100",
+                     ]
                 },
                 {
-                    name: "DACNIS 100",
+                    name: "DACNIS 46",
                     href: "/products/total-energies/industrial-energies/dacnis-100",
                     image: "52213_c0VTTWp4SkxvdjhKVk15WU5Odm5aUVBOaFUzMUwzZERJVzM2WTlheFc1bz0_cqdjmx",
+                    specs:[
+                      "Range :DACNIS",
+"Market segment(s) :Aviation, Steel, Metalworking, Energy, Chemicals, Food processing, Textile, Automotive Manufacturing, Wood and Paper, Cement and Materials, Mining",
+"Application(s) :Compressor",
+"Viscosity :ISO VG 46",
+                     ]
                 }
             ]
         },
@@ -595,6 +654,12 @@ ProductGroup[] = [
                     name: "DACNIS LD 68",
                     href: "/products/total-energies/industrial-grease/dacnis-ld-68",
                     image: "52213_c0VTTWp4SkxvdjhKVk15WU5Odm5aUVBOaFUzMUwzZERJVzM2WTlheFc1bz0_cqdjmx",
+                    specs:[
+                      "Range :DACNIS",
+"Market segment(s) :Aviation, Steel, Metalworking, Energy, Chemicals, Food processing, Textile, Automotive Manufacturing, Wood and Paper, Cement and Materials, Mining",
+"Application(s) :Compressor",
+"Viscosity :ISO VG 68",
+                     ]
                 }
             ]
         }
