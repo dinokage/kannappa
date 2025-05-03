@@ -630,7 +630,7 @@ ProductGroup[] = [
                 },
                 {
                     name: "DACNIS 46",
-                    href: "/products/total-energies/industrial-energies/dacnis-100",
+                    href: "/products/total-energies/industrial-energies/dacnis-46",
                     image: "52213_c0VTTWp4SkxvdjhKVk15WU5Odm5aUVBOaFUzMUwzZERJVzM2WTlheFc1bz0_cqdjmx",
                     specs:[
                       "Range :DACNIS",
