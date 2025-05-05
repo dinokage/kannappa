@@ -58,6 +58,16 @@ ProductGroup[] = [
             name: "DS-252 WEIGHING SCALE",
             href: "/products/essae/digital-weighing-machine/ds-252-weighing-scale",
             image: "ds-252-weighing-scale_ibukrw",
+            specs:[
+              "Power supply:	230V AC, 50Hz",
+"Power consumption:	6W",
+"Display type:7 Segment LED display",
+"Display digit:6 Digits.",
+'Display size:0.56" [14.22 mm.]',
+"Number of keys:5 Keys",
+"Battery	:6V / 4Ah Rechargeable",
+"Dual display:In-built"
+            ]
           },
           {
             name: "BS-250 BABYSCALE",
@@ -169,6 +179,11 @@ ProductGroup[] = [
             name: "DX-451HP WEIGHING SCALE",
             href: "/products/essae/digital-weighing-machine/dx-451hp-weighing-scale",
             image: "dx-451p_upwhia",
+            specs:[
+              "Water Resistant - Full SS platform",
+"Feature - Wash down construction compiles with GMP IP67 indicator and alloy steel load cell suitable for harsh environment",
+"Capacity - Capacity 6 kg -1500 kg"
+            ]
           },
           {
             name: "DS-215 HANGING SCALE",
@@ -270,7 +285,7 @@ ProductGroup[] = [
           {
             name: "AX SERIES PRECISION WEIGHING BALANCE",
             href: "/products/essae/digital-weighing-machine/ax-series-precision-weighing-balance",
-            image: "",
+            image: "ax_series_vpaasm",
             specs:[
               "Weight Sensor - Single Block with EMFR Technology",
               "Display-White LED.",
@@ -281,6 +296,7 @@ ProductGroup[] = [
           {
             name: "DI-60N PANEL MOUNT INDICATOR",
             href: "/products/essae/digital-weighing-machine/di-60n-panel-mount-indicator",
+            image :"DI-60N_fwh0ug",
             specs:[
               "Indicator:Panel Mount Indicator",
 "Console: MOC	SS-304",
@@ -300,6 +316,7 @@ ProductGroup[] = [
           {
             name: "JX-SERIES PRECISION BALANCE",
             href: "/products/essae/digital-weighing-machine/jx-series-precision-balance",
+            image:"Jx-series-jewellary_m80mx9",
             specs:[
              "Power Supply-AC/DC Adaptor	230 V AC, 50 Hz. (Adaptor)",
              "Power Consumption:11 W",
@@ -314,6 +331,7 @@ ProductGroup[] = [
           {
             name: "HT & HTR ANALYTICAL WEIGHING BALANCE",
             href: "/products/essae/digital-weighing-machine/ht-htr-analytical-weighing-balance",
+            image:"ht-htr-series-analytical-balance_jwx40m",
             specs:[
               "Pan size:Ø 80 mm",
 "Dimensions:200 x 290 x 314 mm (WxDxH)",
@@ -330,6 +348,7 @@ ProductGroup[] = [
           {
             name: "AJ SERIES PRECISION WEIGHING BALANCE",
             href: "/products/essae/digital-weighing-machine/aj-series-precision-weighing-balance",
+            image:"aj-series-precision-balance_hplcg8",
             specs:[
               "Weighing units:g, ct",
               "Power source:	AC 230V DC9V",
@@ -344,6 +363,7 @@ ProductGroup[] = [
           {
             name: "GPS MASTER AND SLAVE CLOCKS",
             href: "/products/essae/digital-weighing-machine/gps-master-and-slave-clocks",
+            image:"essae-gdt-master-gps-digital-clock_nvu6a",
             specs:[
               "Enclosure:	HIPS plastic",
 "Dimension (LxHxD):147x213x46 (mm) with antenna",
@@ -361,11 +381,13 @@ ProductGroup[] = [
 "Accuracy - Measures moisture rate in a minimum time with excellent accuracy",
 "Rs Temp - Automatically determines the most suitable heating conditions in a short time",
 "Compact and Safe - Simple, durable and unique structure"
-             ]
+             ],
+             image: "mx-50_e9dwo8",
           },
           {
             name: "LF-225DR SEMI MICRO BALANCE",
             href: "/products/essae/digital-weighing-machine/lf-225dr-semi-micro-balance",
+            image:"LF-225DR_SEMI_MICRO_BALANCE_llcjth",
             specs:[
               "Capacity:92 g / 220g",
               "Read out (d):0.01 mg / 0.1 mg",
