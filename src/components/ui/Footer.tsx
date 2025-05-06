@@ -91,10 +91,7 @@ export default function Footer() {
             <Link href="/sitemap" className="hover:underline">
               Sitemap
             </Link>
-            <span className="ml-2">powered by catchway</span>
-            <Link href="https://eshani.co.in" className="text-[#00aeef] hover:underline">
-              eshani.co.in
-            </Link>
+            
           </div>
         </div>
       </div>
