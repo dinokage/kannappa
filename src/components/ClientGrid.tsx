@@ -13,7 +13,7 @@ export default function ClientShowcase() {
             <div className="relative flex items-center justify-center">
               <Image
                 src="/client/client1.png"
-                alt="bissel logo"
+                alt="bisleri"
                 width={400}
                 height={400}
                 className="object-contain"
@@ -46,11 +46,11 @@ export default function ClientShowcase() {
             </div>
           </div>
 
-          <div className="flex items-center ml-4">
-            <div className="relative  flex items-center justify-center">
+          <div className="flex items-center justify-end md:justify-center">
+            <div className="relative flex items-center justify-center">
               <Image
-                src="/client/client4.png"
-                alt="pidilite logo"
+                src="/client/client7.png"
+                alt="cpf logo"
                 width={400}
                 height={400}
                 className="object-contain"
@@ -59,7 +59,7 @@ export default function ClientShowcase() {
           </div>
 
           {/* Row 3 */}
-          <div className="flex items-center">
+          {/* <div className="flex items-center">
             <div className="relative flex items-center justify-center">
               <Image
                 src="/client/client5.png"
@@ -69,7 +69,7 @@ export default function ClientShowcase() {
                 className="object-contain"
               />
             </div>
-          </div>
+          </div> */}
 
           <div className="flex items-center ml-4">
 
@@ -85,7 +85,7 @@ export default function ClientShowcase() {
           </div>
 
           {/* Row 4 */}
-          <div className="flex items-center justify-end md:justify-center">
+          {/* <div className="flex items-center justify-end md:justify-center">
             <div className="relative flex items-center justify-center">
               <Image
                 src="/client/client7.png"
@@ -95,7 +95,7 @@ export default function ClientShowcase() {
                 className="object-contain"
               />
             </div>
-          </div>
+          </div> */}
 
           <div className="flex items-center  ml-4">
             <div className="relative  flex items-center justify-center">

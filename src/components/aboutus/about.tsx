@@ -143,12 +143,15 @@ export default function AboutUs() {
           <h2 className="text-3xl font-bold text-center text-[#0076b2] mb-12">Our Leadership</h2>
           
           <div className="max-w-xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="md:flex">
-              <div className="md:flex-shrink-0 bg-gray-200 flex items-center justify-center" style={{width: '300px', height: '300px'}}>
-                <div className="text-center p-4">
-                  <p className="text-gray-700 font-medium">Founder Image</p>
-                  <p className="text-gray-500 text-sm">Placeholder</p>
-                </div>
+            <div className="md:flex items-center">
+              <div className="md:flex-shrink-0 mt-4">
+                <Image
+                  src="/client/team.png"
+                  alt="Chevvakula Chandra Sekhar"
+                  width={300}
+                  height={300}
+                  className="object-cover rounded-lg mx-auto"
+                />
               </div>
               <div className="p-8">
                 <h3 className="text-xl font-bold text-[#252525]">Chevvakula Chandra Sekhar</h3>
@@ -162,25 +165,10 @@ export default function AboutUs() {
         </section>
         
         {/* Clients & Partners Section */}
-        <section className="bg-[#f8f9fa] py-16">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center text-[#0076b2] mb-12">Our Clients & Partners</h2>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
-              {/* Placeholder for client logos */}
-              {[1, 2, 3, 4, 5, 6].map((item) => (
-                <div key={item} className="bg-white p-6 rounded-lg shadow-md flex items-center justify-center h-24">
-                  <div className="text-center">
-                    <p className="text-[#29567A] font-medium">Client {item}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+       
         
         {/* Contact CTA Section */}
-        <section className="bg-gradient-to-r from-[#60A7C1] to-[#FFF9E3] py-16">
+        {/* <section className="bg-gradient-to-r from-[#60A7C1] to-[#FFF9E3] py-16">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold text-[#252525] mb-4">Ready to Partner with Eshani?</h2>
             <p className="text-[#252525] text-lg max-w-2xl mx-auto mb-8">
@@ -193,7 +181,7 @@ export default function AboutUs() {
               Contact Us Today
             </a>
           </div>
-        </section>
+        </section> */}
       </main>
     </div>
   )
